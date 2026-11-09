@@ -6,7 +6,7 @@ return {
 			lint.linters_by_ft = {
 				c = { "cppcheck" },
 				cpp = { "cppcheck" },
-				lua = { "luacheck" },
+				--lua = { "luacheck" },
 				python = { "flake8" },
 			}
 
@@ -27,7 +27,6 @@ return {
 			require("mason-tool-installer").setup({
 				ensure_installed = {
 					{ "cpplint", auto_update = true },
-					-- { "luacheck", auto_update = true },
 					{ "flake8", auto_update = true },
 				},
 			})
